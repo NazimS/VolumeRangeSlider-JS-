@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(130, 195, 238)
+}
+.volume-range {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    margin: 0 15px;
+    max-width: 600px;
+    border-radius: 25px;
+    width: 100%;
+    background: #fff;
+    padding: 0 20px;
+    box-shadow: 0 0 8px rgb(8, 66, 8);
+}
+.volume-range #icon {
+    font-size: 36px;
+    color:rgb(8, 66, 8);
+    width: 70px;
+    text-align: center;
+}
+.volume-range input {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 10px;
+    appearance: none;
+    height: 18px;
+    background-color: #ededed;
+    border-radius: 25px;
+    box-shadow: 0 0 6px rgb(102, 100, 100);
+    cursor: pointer;
+    overflow: hidden;
+}
+input::-webkit-slider-thumb {
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    background-color: rgb(8, 66, 8);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: -210px 0 0 200px rgb(8, 66, 8);
+}
+.volume-range .slide-value {
+    font-size: 20px;
+    font-weight: 600;
+    color:rgb(8, 66, 8);
+    width: 70px;
+    text-align: center;
+}
