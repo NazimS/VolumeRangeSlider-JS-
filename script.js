@@ -1,25 +1,26 @@
+
 const icon = document.querySelector("#icon"),
 range = document.querySelector("input"),
 sliderValue = document.querySelector(".slide-value");
 
 range.addEventListener("input", () => {
-    let rangeVal = range.value;
-    sliderValue.innerText = rangeVal;
+    let rangeValue = range.value;
+    sliderValue.innerText = rangeValue;
     // console.log(rangeVal);
-    
-    if (rangeVal > 0) {
+
+    if (rangeValue > 0) {
         icon.classList.replace("uil-volume-mute", "uil-volume-down"); 
     } 
     else {
         icon.classList.replace("uil-volume-down", "uil-volume-mute");  
     }
-    if (rangeVal > 35) {
+    if (rangeValue > 40) {
         icon.classList.replace("uil-volume-down", "uil-volume");  
     } 
     else {
         icon.classList.replace("uil-volume", "uil-volume-down");  
     }
-    if (rangeVal > 85) {
+    if (rangeValue > 85) {
         icon.classList.replace("uil-volume", "uil-volume-up");  
     } 
     else {
